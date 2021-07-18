@@ -1,3 +1,7 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import ShopItemModel from '../models/ShopItemModel';
+
 export default function ShopItemFunc() {
     const obj = {
         brand: 'Tiger of Sweden',
@@ -24,4 +28,9 @@ export default function ShopItemFunc() {
             </div>
         </div>
     );
+
+    ShopItemFunc.propTypes = {
+        obj: PropTypes.instanceOf(ShopItemModel).isRequired
+    }
 }
+
