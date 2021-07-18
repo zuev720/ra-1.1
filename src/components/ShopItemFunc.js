@@ -15,22 +15,23 @@ export default function ShopItemFunc() {
     return (
         <div className="main-content">
             <h2>{obj.brand}</h2>
-            <h1>{obj.title }</h1>
+            <h1>{obj.title}</h1>
             <h3>{obj.description}</h3>
-            <div className="description">{ obj.descriptionFull }</div>
+            <div className="description">{obj.descriptionFull}</div>
             <div className="highlight-window mobile">
                 <div className="highlight-overlay"></div>
             </div>
             <div className="divider"></div>
             <div className="purchase-info">
-                <div className="price">{obj.currency + obj.price + '.00' }</div>
+                <div className="price">{obj.currency + obj.price + '.00'}</div>
                 <button>Добавить в корзину</button>
             </div>
         </div>
     );
 
-    ShopItemFunc.propTypes = {
-        obj: PropTypes.instanceOf(ShopItemModel).isRequired
-    }
+}
+
+ShopItemFunc.propTypes = {
+    obj: PropTypes.instanceOf(ShopItemModel),
 }
 

@@ -3,8 +3,8 @@ export default class ShopItemModel {
         this.brand = brand;
         this.title = title;
         this.description = description;
-        this.online = descriptionFull;
-        this.avatar = price;
-        this.interests = currency;
+        this.descriptionFull = descriptionFull;
+        this.price = price;
+        this.currency = currency;
     }
 }
